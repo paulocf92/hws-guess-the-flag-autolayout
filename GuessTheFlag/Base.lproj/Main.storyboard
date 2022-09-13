@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgb-rg-I0g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgb-rg-I0g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgt-Zu-wba">
-                                <rect key="frame" x="95" y="100" width="224" height="114"/>
+                                <rect key="frame" x="95" y="104" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lgt-Zu-wba" secondAttribute="height" multiplier="112:57" id="njd-wG-3hD"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -25,7 +29,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-a0-QYb">
-                                <rect key="frame" x="95" y="244" width="224" height="114"/>
+                                <rect key="frame" x="95" y="248" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w5u-a0-QYb" secondAttribute="height" multiplier="112:57" id="9fg-Do-b7W"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -33,7 +40,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tc-LM-s4t">
-                                <rect key="frame" x="95" y="388" width="224" height="114"/>
+                                <rect key="frame" x="95" y="392" width="224" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9tc-LM-s4t" secondAttribute="height" multiplier="112:57" id="3L9-Aa-hiC"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -47,7 +57,10 @@
                             <constraint firstItem="9tc-LM-s4t" firstAttribute="centerX" secondItem="w5u-a0-QYb" secondAttribute="centerX" id="LDZ-RS-Ces"/>
                             <constraint firstItem="w5u-a0-QYb" firstAttribute="centerX" secondItem="Lgt-Zu-wba" secondAttribute="centerX" id="O4d-ar-PQJ"/>
                             <constraint firstItem="w5u-a0-QYb" firstAttribute="top" secondItem="Lgt-Zu-wba" secondAttribute="bottom" constant="30" id="PzL-j9-5gc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9tc-LM-s4t" secondAttribute="bottom" constant="20" id="SZc-z5-mfh"/>
                             <constraint firstItem="Lgt-Zu-wba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Wva-JI-sCf"/>
+                            <constraint firstItem="w5u-a0-QYb" firstAttribute="height" secondItem="Lgt-Zu-wba" secondAttribute="height" id="b3k-T1-vkn"/>
+                            <constraint firstItem="9tc-LM-s4t" firstAttribute="height" secondItem="w5u-a0-QYb" secondAttribute="height" id="bea-HB-hka"/>
                             <constraint firstItem="Lgt-Zu-wba" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m1B-Gq-0F2"/>
                             <constraint firstItem="9tc-LM-s4t" firstAttribute="top" secondItem="w5u-a0-QYb" secondAttribute="bottom" constant="30" id="nF9-Nk-Xew"/>
                         </constraints>
@@ -69,7 +82,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tgb-rg-I0g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vZg-Kn-3CI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
